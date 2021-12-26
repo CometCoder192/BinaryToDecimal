@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	transition: 0.3s;
+
+}
+h1 {
+	font-family: monospace;
+	margin-top: 20vh;
+	text-align: center;
+}
+.userInp {
+	width: 20vh;
+	transition: 0.3s;
+}
+.mainElements {
+	text-align: center;
+	border: 5px solid darkblue;
+	border-radius: 20%;
+	padding: 40px;
+	margin: 20px;
+	transition: 0.3s;
+}
+br {
+	user-select: none;
+}
+.userInp {
+	border: 1px solid purple;
+	border-radius: 10px;
+	background: #e9e4f0;
+	font-family: monospace;
+	padding: 1.5vh;
+	transition: 0.3s;
+}
+.userInp:active {
+	transition: 0.1s;
+	transform: translateY(-1px);
+}
+.inpButton {
+	cursor: pointer;
+	font-family: lucida;
+	border: none;
+	padding: 2vh;
+	border-radius: 5%;
+	background: linear-gradient(to right, #d3cce3, #e9e4f0);
+	transition: 0.3s;
+}
+.inpButton:hover {
+	transition: 0.3s;
+	opacity: 0.7;
+	transform: translateY(-2px);
+}
+.inpButton:active {
+	color: red;
+	transition: 0.2s;
+}
+#animator {
+	animation-name: colorchanger;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	color: black;
+}
+@keyframes colorchanger {
+	0% {
+		color: black;
+	}
+	50% {
+		color: darkgreen;
+	}
+	100% {
+		color: black;
+	}
+}
